@@ -26,7 +26,7 @@ def Convert(type, path):
 def downloader(link):
 
     tube = getTube(link)
-    type = input("Qual tipo de arquivo V(video) / A(audio), V/A?: ")
+    type = input("Qual tipo de arquivo desejado V(video) ou A(audio)? V/A: ")
 
     print("BAIXANDO ARQUIVO ....")
     if type.upper() == "A":
@@ -42,7 +42,7 @@ def downloader(link):
 
 link = "S"
 
-while link.upper != "N":
+while link.upper() != "N":
     link = input("Cole o link do Youtube: ")
     downloader(link)
     link = input("Deseja fazer mas downloads? S/N: ")
